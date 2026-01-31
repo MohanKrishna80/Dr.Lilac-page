@@ -30,7 +30,7 @@ const challenges = [
 export default function Specialties() {
   return (
     <section className="py-24 px-6 bg-neutral-50">
-      {/* Title */}
+    
       <motion.h2
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -39,7 +39,7 @@ export default function Specialties() {
         My Specialties
       </motion.h2>
 
-      {/* Specialty Cards */}
+      
       <div className="grid md:grid-cols-3 gap-10 max-w-8xl mx-auto mb-20">
         {specialties.map((s, i) => (
           <motion.div
@@ -56,7 +56,7 @@ export default function Specialties() {
               <p className="text-gray-600 leading-relaxed">{s.desc}</p>
             </div>
 
-            {/* Bottom Rounded Image */}
+            
             <div className="px-6 pb-6 flex justify-center">
               <img
                 src={s.img}
@@ -68,13 +68,13 @@ export default function Specialties() {
         ))}
       </div>
 
-      {/* Support Section */}
+      
       <motion.div
   initial={{ opacity: 0 }}
   whileInView={{ opacity: 1 }}
   className="grid md:grid-cols-2 min-h-screen"
 >
-  {/* Left Image */}
+
   <motion.img
     initial={{ opacity: 0, x: -40 }}
     whileInView={{ opacity: 1, x: 0 }}
@@ -84,12 +84,12 @@ export default function Specialties() {
     className="w-full h-screen object-cover"
   />
 
-  {/* Right Content */}
+
   <div
     style={{ backgroundColor: "hsl(30deg 6.14% 80.12%)" }}
     className="flex flex-col h-screen px-20 py-24 text-left"
   >
-    {/* Top Content */}
+    
     <div className="space-y-8">
       <h3 className="text-5xl font-medium">
         You don’t have to do this <span className="italic">all alone.</span>
@@ -111,7 +111,7 @@ export default function Specialties() {
       </p>
     </div>
 
-    {/* Bottom CTA */}
+    
    <div className="mt-4 flex items-center width-full justify-center rounded-sm border-t border-black transition-all duration-700 hover:bg-green-950 hover:text-white">
   <button className="text-center py-3 gap-3 uppercase tracking-widest text-md transition-all duration-300">
     Work with me <span>→</span>

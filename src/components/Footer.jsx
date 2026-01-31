@@ -4,10 +4,10 @@ export default function Footer() {
   return (
     <footer className="bg-neutral-50 px-12 pt-24">
 
-      {/* Top Footer */}
+    
       <div className="max-w-7xl mx-auto flex justify-between items-start text-lg text-gray-700 pb-24">
 
-        {/* Brand + Address */}
+       
         <div className="space-y-4">
           <h3 className="text-4xl font-medium text-[#1f2d16] mb-10">
             Lilac Template
@@ -20,14 +20,13 @@ export default function Footer() {
           <p className="underline">(555) 555-5555</p>
         </div>
 
-        {/* Hours */}
+        
         <div className="space-y-4 text-right">
           <h4 className="text-3xl font-medium text-[#1f2d16]">Hours</h4>
           <p>Monday – Friday</p>
           <p>10am – 6pm</p>
         </div>
 
-        {/* Find */}
         <div className="space-y-4 text-right">
           <h4 className="text-3xl font-medium text-[#1f2d16]">Find</h4>
 
@@ -45,7 +44,6 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* Bottom Bar */}
       <div className="bg-neutral-200 border-t border-black py-10">
 
         <div className=" mx-full text-center space-y-6 text-base text-[#1f2d16]">

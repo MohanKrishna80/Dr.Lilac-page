@@ -32,7 +32,7 @@ export default function Background() {
         {items.map((item, i) => (
           <div key={i} className="border-b font-bold border-[#1f2d16]">
 
-            {/* Header Row */}
+            
             <button
               onClick={() => setOpen(open === i ? null : i)}
               className="w-full flex justify-between items-center py-8 text-left"
@@ -41,7 +41,6 @@ export default function Background() {
                 {item.title}
               </span>
 
-              {/* Plus */}
               <span
                 className={`text-3xl font-light font-bold text-[#1f2d16] transition-transform duration-300 ${
                   open === i ? "rotate-45" : ""
@@ -51,7 +50,7 @@ export default function Background() {
               </span>
             </button>
 
-            {/* Content */}
+            
             <div
               className={`grid transition-all duration-300 ${
                 open === i ? "grid-rows-[1fr]" : "grid-rows-[0fr]"
