@@ -5,11 +5,11 @@ export default function Footer() {
     <footer className="bg-neutral-50 px-4 md:px-12 pt-16 md:pt-24">
 
       {/* Top Section */}
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start gap-12 text-base md:text-lg text-gray-700 pb-16 md:pb-24">
+      <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start gap-16 md:gap-12 text-base md:text-lg text-gray-700 pb-16 md:pb-24">
 
         {/* Address */}
-        <div className="space-y-3 md:space-y-4 text-center md:text-left">
-          <h3 className="text-3xl md:text-4xl font-medium text-[#1f2d16] mb-6 md:mb-10">
+        <div className="w-full md:w-auto space-y-3 md:space-y-4 text-left">
+          <h3 className="text-2xl sm:text-3xl md:text-4xl font-medium text-[#1f2d16] mb-4 md:mb-10">
             Lilac Template
           </h3>
 
@@ -25,8 +25,8 @@ export default function Footer() {
         </div>
 
         {/* Hours */}
-        <div className="space-y-3 md:space-y-4 text-center md:text-right">
-          <h4 className="text-2xl md:text-3xl font-medium text-[#1f2d16]">
+        <div className="w-full md:w-auto space-y-3 md:space-y-4 text-left md:text-right">
+          <h4 className="text-xl md:text-3xl font-medium text-[#1f2d16]">
             Hours
           </h4>
           <p>Monday – Friday</p>
@@ -34,8 +34,8 @@ export default function Footer() {
         </div>
 
         {/* Links */}
-        <div className="space-y-3 md:space-y-4 text-center md:text-right">
-          <h4 className="text-2xl md:text-3xl font-medium text-[#1f2d16]">
+        <div className="w-full md:w-auto space-y-3 md:space-y-4 text-left md:text-right">
+          <h4 className="text-xl md:text-3xl font-medium text-[#1f2d16]">
             Find
           </h4>
 
