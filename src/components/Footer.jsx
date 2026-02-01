@@ -5,21 +5,21 @@ export default function Footer() {
     <footer className="bg-neutral-50 px-4 md:px-12 pt-14 md:pt-20">
 
       {/* Top Section */}
-      <div className="max-w-7xl mx-auto flex flex-col gap-10 text-sm md:text-base text-gray-700 pb-14 md:pb-20">
+      <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start gap-10 md:gap-12 text-sm md:text-base text-gray-700 pb-14 md:pb-20">
 
-        {/* Brand + Hours (always row) */}
-        <div className="flex flex-row justify-between items-start gap-6">
+        {/* Mobile Group: Brand + Hours | Desktop: separate columns */}
+        <div className="flex flex-row justify-between w-full md:w-auto md:flex-col md:justify-start gap-6 md:gap-0">
 
           {/* Brand */}
           <div className="space-y-2 text-left">
-            <h3 className="text-lg md:text-2xl font-medium text-[#1f2d16] mb-2">
+            <h3 className="text-lg md:text-2xl font-medium text-[#1f2d16] mb-2 md:mb-6">
               Lilac Template
             </h3>
 
             <p>123 Example Road</p>
             <p>Minneapolis, MN</p>
 
-            <p className="mt-3 underline cursor-pointer hover:opacity-70 transition">
+            <p className="mt-3 md:mt-4 underline cursor-pointer hover:opacity-70 transition">
               email@example.com
             </p>
             <p className="underline cursor-pointer hover:opacity-70 transition">
@@ -28,7 +28,7 @@ export default function Footer() {
           </div>
 
           {/* Hours */}
-          <div className="space-y-2 text-left">
+          <div className="space-y-2 text-left md:text-right md:mt-10">
             <h4 className="text-base md:text-xl font-medium text-[#1f2d16]">
               Hours
             </h4>
@@ -38,8 +38,11 @@ export default function Footer() {
 
         </div>
 
-        {/* Find (below on mobile) */}
-        <div className="space-y-2 text-left md:text-right">
+        {/* Desktop Only Spacer Column */}
+        <div className="hidden md:block" />
+
+        {/* Find */}
+        <div className="space-y-2 text-left md:text-right w-full md:w-auto">
 
           <h4 className="text-base md:text-xl font-medium text-[#1f2d16]">
             Find
