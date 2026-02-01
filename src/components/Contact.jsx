@@ -1,28 +1,28 @@
 import React from "react";
-import { motion } from "framer-motion";
 
 export default function CTA() {
   return (
     <section
       style={{ backgroundColor: "hsla(56.79,28.57%,38.43%,1)" }}
-      className="py-24 px-10 text-center"
+      className="py-16 md:py-24 px-6 md:px-10 text-center animate-fadeUp"
     >
-      <motion.h2
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        className="text-4xl mb-4 text-white"
-      >
+      <h2 className="text-3xl md:text-4xl mb-4 text-white">
         Get started today.
-      </motion.h2>
+      </h2>
 
-      <p className="text-white/90">
+      <p className="text-white/90 text-sm md:text-base">
         Ready to take the first step towards a happier, healthier you?
       </p>
 
-      <p className="text-white/90">Contact me to book your first session.</p>
-      <button className="mt-6 px-14 py-2 text-white    border border-white bg-trasparent  ">
+      <p className="text-white/90 text-sm md:text-base">
+        Contact me to book your first session.
+      </p>
+
+      <button className="group mt-8 px-10 md:px-14 py-3 text-white border border-white bg-transparent flex items-center justify-center mx-auto gap-4 transition-all duration-300 ease-out hover:scale-105 active:scale-95">
         Let's chat
-        <i className="fa-solid fa-arrow-right pl-6 text-xl 1 "></i>
+        <span className="transition-transform duration-300 group-hover:translate-x-2 text-xl">
+          →
+        </span>
       </button>
     </section>
   );
